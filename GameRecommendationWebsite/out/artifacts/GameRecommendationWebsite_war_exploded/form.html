@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Game Advice Home (HTML)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1 align="center">Beer Advice Wizard</h1>
+<form id="form1" name="form1" method="POST" action="SelectGame.do">
+    <p>Select game genre<p>
+    <p>Genres:
+        <!-- the name attribute is set to 'color' which is the
+             parameter to be retrieved by the servlet -->
+        <select id="color" name="games" size ="1">
+            <option value="action">action</option>
+            <option value="adventure">adventure</option>
+        </select>
+    </p>
+    <center>
+        <input id="beerSubmit" name="beerSubmit" type="submit" value="Get Advice">
+    </center>
+</form>
+</body>

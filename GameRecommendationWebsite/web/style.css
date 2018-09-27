@@ -1,0 +1,29 @@
+/*
+Template: Index Page
+Created by: Sean Lewis
+*/
+
+/* -- Nav Bar -- */
+.nav ul { vertical-align: middle; list-style: none; background-color: #b01326; text-align: center; padding: 0;margin: 0;}
+.nav li { font-family: 'Oswald', sans-serif;font-size: 22px;line-height: 40px; padding: 10px 10px; display: inline-block;}
+.nav li:hover {background-color: #005f5f; transition: .3s background-color;}
+.nav li:last-child:hover {background-color: #b01326; transition: .3s background-color;}
+.nav a {text-decoration: none;color: #fff;}
+.search {color: #fff; padding-right: 6px; border: solid 2px rgb(146, 143, 143); background-color: rgba(176, 170, 167, 0.5);}
+.search:hover {background-color: blue;}
+.search-box, .nav-spacer {font-size: 22px; font-family: 'Oswald', sans-serif; line-height: 40px;}
+.nav-spacer {padding-left: 3px;}
+
+/* -- Welcome Page -- */
+.welcome-page-img {height: 25%; width: 38%;}
+.welcome-page-banner-text {margin: 0 auto; display: grid; width: 38%; background-color: rgba(206, 198, 199, 0.6);}
+
+/* -- Home Page -- */
+.main-container {}
+.main-inner {text-align: center;}
+
+/* -- Form Page -- */
+.form-genre {text-align: center;}
+
+/* -- Result Page -- */
+.result-inner {text-align: center;}
