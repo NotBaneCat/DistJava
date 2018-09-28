@@ -19,11 +19,8 @@
     <jsp:include page="header.jsp" />
 </head>
 <body>
-<h1 align="center">Game Recommendation (JSP)</h1>
-<div class="result-container">
-    <div class="result-inner">
-        <h2>Reformat this page to contain images and desc. when clicked.</h2>
-        <p>
+    <h1 align="center">Game Recommendation (JSP)</h1>
+
                 <%
                 List recs = (List)request.getAttribute("gameRecommendations");
                 Iterator it = recs.iterator();
@@ -31,16 +28,22 @@
                     // Notice we're outputting some HTML. Is that a good idea?
                     // Also, notice we do not cast the object returned by the
                     // iterator to a String. Why?
-                    out.print("<br>try: " + it.next());
+                    out.print("<div class='parent'>" +
+                                "<div class='child'>" +
+                                    "<p>Image</p></div>" +
+                                "<div class='buttons'>"+
+                                "<div class='name'>" +
+                                    "<p>" + it.next() + "</p>" +
+                                "</div> " +
+                                "<a href='description.jsp'><div class='desc'>" +
+                                "<p>Description</p>" +
+                                "</div></a>" +
+                                "<a href='cart.jsp'><div class='cart'>" +
+                                    "<p>Add To Cart</p>" +
+                                "</div></a></div>" +
+                              "</div>");
                 }
                 %>
-        <p><a href="form.jsp">Back</a>
-    </div>
-</div>
-
-
-
-
 </body>
 </html>
 

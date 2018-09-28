@@ -16,11 +16,10 @@
             <div>
                 <h2>To Do List:</h2>
                 <ul>
-                    <li>First priority </li>
-                    <li>Second priority format browse page to my likings</li>
-                    <li>Third priority add ability to use search box</li>
-                    <li>Fourth priority create cart.jsp</li>
-                    <li>Fifth get cookies to work</li>
+                    <li>format browse page to my likings</li>
+                    <li>add ability to use search box</li>
+                    <li> create cart.jsp</li>
+                    <li>get cookies to work</li>
                 </ul>
             </div>
         </div>

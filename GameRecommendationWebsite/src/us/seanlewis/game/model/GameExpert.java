@@ -9,7 +9,7 @@ public class GameExpert {
 
         if (genre.equals("action")){
             gameList.add("Counter Strike Global Offensive");
-            gameList.add("Battlefield 5 (Coming Nov. 20, 2018)");
+           /* gameList.add("Battlefield 5 (Coming Nov. 20, 2018)");*/
         }
         else if (genre.equals("adventure")){
             gameList.add("The Witcher 3: Wild Hunt");

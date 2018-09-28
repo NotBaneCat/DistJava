@@ -4,9 +4,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<jsp:include page="cart.jsp" />
+<head>
+    <title>Title</title>
+</head>
 <body>
 
 </body>
-<jsp:include page="footer.jsp" />
 </html>
+
