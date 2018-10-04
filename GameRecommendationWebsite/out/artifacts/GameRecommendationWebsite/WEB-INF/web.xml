@@ -4,20 +4,12 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>Game Recommendation Site</servlet-name>
+        <servlet-name>GameRecommendation</servlet-name>
         <servlet-class>us.seanlewis.game.controller.GameSelectionController</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Game Recommendation Site</servlet-name>
-        <url-pattern>/SelectGame.do</url-pattern>
+        <servlet-name>GameRecommendation</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
     </servlet-mapping>
-    <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
-    </session-config>
-    <welcome-file-list>
-        <welcome-file>welcome-page.jsp</welcome-file>
-    </welcome-file-list>
 </web-app>
