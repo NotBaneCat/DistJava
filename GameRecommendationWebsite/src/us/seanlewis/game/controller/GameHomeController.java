@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 
-public class GameSelectionController extends HttpServlet {
+public class GameHomeController extends HttpServlet {
 
     private final String RESULT_PAGE = "home.jsp";
     @Override

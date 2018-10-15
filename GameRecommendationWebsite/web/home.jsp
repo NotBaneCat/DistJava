@@ -22,9 +22,6 @@
                         Iterator it = recs.iterator();
                         while(it.hasNext()) {
                             GameItem item = (GameItem) it.next();
-                            // Notice we're outputting some HTML. Is that a good idea?
-                            // Also, notice we do not cast the object returned by the
-                            // iterator to a String. Why?
                             out.print("<div class='parent'><div class='child'>" +
                                     "<img src='" + item.getImage() + "' class='game-img'>" +
                                     "<div class='buttons'>"+
@@ -34,12 +31,13 @@
                                     "<a href='description.jsp'><div class='desc'>" +
                                     "<p>" + item.getDescription() + "</p>" +
                                     "</div></a>" +
-                                    "<a href='cart.jsp'><div class='cart'>" +
-                                    "<p>Add To Cart</p>" +
-                                    "</div></a></div></div>" +
+                                    "<div class='cart'>Add to Cart<input type='checkbox' name='cartItem' " +
+                                    "value=" + item.getProductNumber() + ">" +
+                                    "</div></div></div>" +
                                     "</div>");
                         }
                     %>
+                    <input type="submit" value="Purchase">
             </form>
             </div>
         </div>

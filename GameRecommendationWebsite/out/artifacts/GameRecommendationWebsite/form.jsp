@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1 align="center">What Genre Do You Want To Search For?</h1>
-<form class="form-genre" id="form1" name="form1" method="POST" action="SelectGame.do">
+<form class="form-genre" id="form1" name="form1" method="POST" action="gimme.genre">
     <p>Select game genre<p>
     <p>Genres:
         <!-- the name attribute is set to 'color' which is the

@@ -32,6 +32,8 @@ public class GameItem {
         return price;
     }
 
+    public String getGenre() { return genre;}
+
     public boolean isFeatured() {
         return featured;
     }

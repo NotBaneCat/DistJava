@@ -8,7 +8,7 @@ public class GameList {
 
     public GameList() {
         productNumber = 1;
-        gameList.add(new GameItem(productNumber++, "Counter Strike Global Offensive", 15.00, true, "action", "First-person shooter", "images/csgo-banner.jpg"));
+        gameList.add(new GameItem(productNumber++, "Counter Strike Global Offensive", 15.00, true, "action", "First-person action shooter", "images/csgo-banner.jpg"));
         gameList.add(new GameItem(productNumber++, "The Witcher 3: Wild Hunt", 50.00, true, "adventure", "RPG Adventure","images/The-Witcher-3-banner.jpg"));
         gameList.add(new GameItem(productNumber++, "Borderlands 2: Game of the Year", 20.00, true, "adventure", "First-person Adventure","images/bl2-GoTY-banner.jpg"));
         gameList.add(new GameItem(productNumber++, "God of War(PS4 2018)", 60.00, true, "adventure", "Third Person Adventure","images/GoW-banner.jpg"));
@@ -36,6 +36,16 @@ public class GameList {
         for(GameItem i: gameList) {
             if (i.getProductNumber() == itemNum) {
                 return i;
+            }
+        }
+        return item;
+    }
+
+    public List<GameItem> getItemGenre(String genre) {
+        List<GameItem> item = new ArrayList<>();
+        for(GameItem i: gameList) {
+            if(i.getGenre().equals(genre)){
+                item.add(i);
             }
         }
         return item;
