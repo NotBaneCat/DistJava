@@ -11,7 +11,7 @@ public class CreateProject5DB
         {
             // Create a named constant for the URL.
             // NOTE: This value is specific for Java DB.
-            final String DB_URL = "jdbc:derby:C:/Users/BaneCat/Downloads/Distributed-master/Distributed-master/Project5DB/Project5DB;create=true";
+            final String DB_URL = "jdbc:derby:Project5DB;create=true";
 
             // Create a connection to the database.
             Connection conn =
@@ -59,9 +59,9 @@ public class CreateProject5DB
 
             try
             {
-                // Drop the Events table.
+                // Drop the Game table.
                 stmt.execute("DROP TABLE EVENTS");
-                System.out.println("EVENTS table dropped.");
+                System.out.println("Games table dropped.");
             } catch (SQLException ex)
             {
                 // No need to report an error.
@@ -76,7 +76,7 @@ public class CreateProject5DB
 
     /**
      * The buildEventsTable method creates the
-     * Events table and adds some rows to it.
+     * Game table and adds some rows to it.
      */
     public void buildEventsTable(Connection conn) throws SQLException {
         try
@@ -93,10 +93,10 @@ public class CreateProject5DB
                     "Image VARCHAR (40), " +
                     "Price DOUBLE " +
                     ")");
-            System.out.println("EVENTS table created.");
+            System.out.println("GAMES table created.");
         } catch (SQLException ex)
         {
-            System.out.println("Events Table Creation ERROR: " + ex.getMessage());
+            System.out.println("Game Table Creation ERROR: " + ex.getMessage());
         }
     }
     private void insertEventsTable(Connection conn) {
@@ -119,10 +119,10 @@ public class CreateProject5DB
                     "true, " +
                     "'CSGOBanner', " +
                     "12.00)");
-            System.out.println("Events Table rows inserted.");
+            System.out.println("Game Table rows inserted.");
         }  catch (SQLException ex)
         {
-            System.out.println("Events Table INSERT ERROR: " + ex.getMessage());
+            System.out.println("Game Table INSERT ERROR: " + ex.getMessage());
         }
     }
 

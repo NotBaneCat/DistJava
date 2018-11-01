@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/newfolder/java_ee_sdk-8/glassfish5/javadb/lib/derbyclient.jar!/" />
+          <root url="jar://C:/newfolder/java_ee_sdk-8/glassfish5/javadb/lib/derby.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/newfolder/java_ee_sdk-8/glassfish5/javadb/lib/derby.jar!/" />
+          <root url="jar://C:/newfolder/java_ee_sdk-8/glassfish5/javadb/lib/derbyclient.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -43,6 +43,23 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="derbyclient" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/newfolder/java_ee_sdk-8/glassfish5/javadb/lib/derbyrun.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/newfolder/java_ee_sdk-8/glassfish5/javadb/lib/derbyoptionaltools.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
