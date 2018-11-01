@@ -5,7 +5,6 @@ public class Main {
         CreateProject5DB db = new CreateProject5DB();
         EventInterface ei = new Events();
         ei.outputDB();
-        ei.addContent();
         System.out.println("==========================");
         ei.outputDB();
         ei.menuOutput();

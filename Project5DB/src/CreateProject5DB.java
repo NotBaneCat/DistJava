@@ -11,7 +11,7 @@ public class CreateProject5DB
         {
             // Create a named constant for the URL.
             // NOTE: This value is specific for Java DB.
-            final String DB_URL = "jdbc:derby:Project5DB;create=true";
+            final String DB_URL = "jdbc:derby:C:/Users/BaneCat/Downloads/Distributed-master/Distributed-master/Project5DB/Project5DB;create=true";
 
             // Create a connection to the database.
             Connection conn =
@@ -48,7 +48,7 @@ public class CreateProject5DB
 
             try
             {
-                // Drop the Customer table.
+                // Drop the table.
                 stmt.execute("DROP TABLE CART");
                 System.out.println("CART table dropped.");
             } catch (SQLException ex)
